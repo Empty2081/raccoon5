@@ -1,0 +1,142 @@
+{extend name="./template/qq/pc/pub/base2.html" /}
+{block name="seo"}
+<title>漫画分类-{$site_name}</title>
+{/block}
+{block name="css"}
+<link href="/template/qq/css/ac.page.rank.css" rel="stylesheet" type="text/css"/>
+{/block}
+{block name="main"}
+
+<div class="mod-rank-wrap clearfix rank-sub-mb" id="app">
+    <div class="mod-rank-menu ui-left">
+        <h2 class="ui-rank-tit">排行榜</h2>
+        <div class="mod-rank-tab-wrap">
+            <div class="mod-rank-menu-tabcont">
+                <span class="ui-rank-ft-tit"><span>作品榜</span></span>
+                <ul class="mod-rank-menu-list">
+                    <li><a title="全部榜单" :class="{'fwb':index == 1}" @click="switchTab(1)">全部榜单</a></li>
+                    <li><a title="新书榜" :class="{'fwb':index == 2}" @click="switchTab(2)">新书榜</a></li>
+                    <li><a title="人气榜" :class="{'fwb':index == 3}" @click="switchTab(3)">人气榜</a></li>
+                    <li><a title="完结榜" :class="{'fwb':index == 4}" @click="switchTab(4)">完结榜</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ran-wrapp" v-show="index == 1">
+        <div class="ran-main-top ran-main-list ui-mb40 clearfix">
+            {volist name="list" id="item"}
+            <div class="ran-top-pay ran-rank mod-rank-wr">
+                <div class="mod-rank-head">
+                    <a>
+                        <h3 class="ran-rank-title ui-left">{$item.title}</h3>
+                    </a>
+                </div>
+                <div class="mod-rank-list-wr tabs-panel">
+                    <ol class="mod-rank-list">
+                        {volist name="item['keyword']" id="keyword" length="10"}
+                        {if $i == 1}
+                        <li class="mod-rank-first">
+                            <a target="_blank" class="mod-rank-cover ui-left" title="{$keyword.book_name}" href="/{$book_ctrl}/{$keyword.param}">
+                                <img height="104px" width="78px" src="{$keyword.cover_url}" title="{$keyword.book_name}" alt="{$keyword.book_name}">
+                            </a>
+                            <a target="_blank" class="mod-rank-no" title="{$keyword.book_name}" href="/{$book_ctrl}/{$keyword.param}">{$i}</a>
+                            <dl class="mod-rank-info ui-left">
+                                <dt class="mod-rank-title">
+                                    <a title="{$keyword.book_name}" href="/{$book_ctrl}/{$keyword.param}" target="_blank">
+                                        {$keyword.book_name}
+                                    </a>
+                                </dt>
+                                <dd>{$keyword.author_name}</dd>
+                                <dd><span class="ui-left">人气：<em>{$keyword.clicks}</em></span><sup class="ui-rank-trend-up"></sup></dd>
+                            </dl>
+                        </li>
+                        {else /}
+                        <li class="">
+                            <sub class="mod-rank-keep ui-left">{$i}</sub>
+                            <a target="_blank" class="mod-rank-name ui-left" title="{$keyword.book_name}"
+                               href="/Comic/comicInfo/id/645332">{$keyword.book_name}</a>
+                            <sup class="ui-rank-trend-up"></sup>
+                            <span class="mod-rank-num ui-right">{$keyword.clicks}</span>
+                        </li>
+                        {/if}
+                        {/volist}
+                    </ol>
+                </div>
+            </div>
+            {/volist}
+        </div>
+    </div>
+    {volist name="list" id="item" key="k"}
+    <div class="rank-right ui-right" v-show="index == {$k + 1}">
+        <div class="rank-sub-list">
+            <div class="ran-rank-tit clearfix">
+                <h3 class="ran-rank-title ui-left">{$item.title}</h3>
+                <span id="month-ticket-state-date" class="ran-rank-month-txt ui-left"></span>
+            </div>
+            <div class="rank-tabcon">
+                <div class="rank-list-wrap clearfix ">
+                    <ul class="rank-ul">
+                        {volist name="item['keyword']" id="keyword" length="20" key="n"}
+                        <li class="pt-none">
+                            <em class="ui-border-em ">{$n}</em>
+                            <a href="/{$book_ctrl}/{$keyword.param}" title="{$keyword.book_name}">{$keyword.book_name}</a>
+                        </li>
+                        {/volist}
+                    </ul>
+                    <ul class="rank-ul">
+                        {volist name="item['keyword']" id="keyword" offset="20" length="20" key="n"}
+                        <li class="pt-none">
+                            <em class="ui-border-em ">{$n + 20}</em>
+                            <a href="/{$book_ctrl}/{$keyword.param}" title="{$keyword.book_name}">{$keyword.book_name}</a>
+                        </li>
+                        {/volist}
+                    </ul>
+                    <ul class="rank-ul">
+                        {volist name="item['keyword']" id="keyword" offset="40" length="20" key="n"}
+                        <li class="pt-none">
+                            <em class="ui-border-em ">{$n + 40}</em>
+                            <a href="/{$book_ctrl}/{$keyword.param}" title="{$keyword.book_name}">{$keyword.book_name}</a>
+                        </li>
+                        {/volist}
+                    </ul>
+                    <ul class="rank-ul">
+                        {volist name="item['keyword']" id="keyword" offset="60" length="20" key="n"}
+                        <li class="pt-none">
+                            <em class="ui-border-em ">{$n + 60}</em>
+                            <a href="/{$book_ctrl}/{$keyword.param}" title="{$keyword.book_name}">{$keyword.book_name}</a>
+                        </li>
+                        {/volist}
+                    </ul>
+                    <ul class="rank-ul">
+                        {volist name="item['keyword']" id="keyword" offset="80" length="20" key="n"}
+                        <li class="pt-none">
+                            <em class="ui-border-em ">{$n + 80}</em>
+                            <a href="/{$book_ctrl}/{$keyword.param}" title="{$keyword.book_name}">{$keyword.book_name}</a>
+                        </li>
+                        {/volist}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/volist}
+</div>
+
+{/block}
+{block name="js"}
+<script src="https://lib.baomitu.com/vue/2.6.10/vue.min.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            index: 1,
+        },
+        methods: {
+            switchTab(index) {
+                this.index = index
+                console.log(this.index)
+            }
+        }
+    });
+</script>
+{/block}
