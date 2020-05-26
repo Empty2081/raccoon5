@@ -1,0 +1,42 @@
+
+.mh-tag {
+    letter-spacing: .1em !important;
+    background-image: linear-gradient(-217deg,#fd113a 0,#ff5a00 100%) !important;
+}
+
+.mh-vip-tag {
+    letter-spacing: .1em !important;
+    background-image: none !important;
+}
+
+.view-comment .view-detail-list li .info .subtitle {
+    display: table;
+}
+
+.icon-coin {
+    background: url(/static/images/icon-coin.png) no-repeat left center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.scan-pay-box {
+    margin-top: -60px !important;
+}
+
+.alertTop_1 {
+    width:240px;
+}
+
+.view-comment-main .list li .info textarea{
+    height:100px;
+}
+
+.view-comment-main .list li .info .content{
+    overflow-wrap:break-word ;
+}
+
+

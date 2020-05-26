@@ -1,0 +1,274 @@
+.account-select{
+    width: 400px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    padding: 0 8px;
+    font-family: "PingFang SC",'Microsoft YaHei';
+}
+
+.code-get{
+	font-size: 13px;
+	color: #20A0FF;
+	letter-spacing: 0;
+	text-align: right;
+	position: relative;
+	left: -100px;
+}
+
+.phone-tip{
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+    line-height: 20px !important;
+}
+
+.account-success-con{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.account-success-tip{
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.account-success-bottom{
+    margin-top: 26px;
+}
+
+.account-success-bottom a{
+    font-size: 13px;
+    color: #20A0FF;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+
+.input-con{
+    position: relative;
+}
+
+.input-con-title{
+    font-size: 15px;
+    color: #252525;
+    letter-spacing: 0;
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+
+.input-con input{
+    width: 60%;
+    padding-left: 30%;
+}
+
+.input-con-code{
+    font-size: 11px;
+    color: #20A0FF;
+    letter-spacing: 0;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+}
+
+.line-container select{
+    margin-top: 10px;
+    border: 1px solid #F4F4F4;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    font-family: 'Microsoft YaHei';
+    padding: 0 5%;
+    font-size: 15px;
+    width: 95%;
+    padding-left: 40%;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+
+.title-right-href{
+    font-size: 13px;
+    color: #20A0FF;
+    letter-spacing: 0;
+    float: right;
+    text-decoration: underline;
+}
+
+.line-tip-center{
+    font-size: 13px;
+    color: #20A0FF;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+}
+
+.input-con-tip{
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.input-con-tip span{
+    font-weight: bold;
+}
+
+.input-con-tip2{
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.input-con-tip2.bottom{
+    position: absolute;
+    bottom: 20px;left: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+}
+
+.input-con-img{
+    margin: 30px auto;
+    display: block;
+    width: 165px;
+}
+
+.input-con-phone{
+    font-size: 20px;
+    color: #252525;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 50px;
+}
+
+.p-r{
+    position: relative;
+}
+
+.a-code-get{
+    font-size: 13px;
+    color: #20A0FF;
+    letter-spacing: 0;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+p.p-r input{
+    padding-left: 100px;
+}
+
+p.p-r .account-select{
+    padding-left: 100px;
+}
+
+.p-r .p-title{
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: right;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.p-r .p-phone{
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.p-r .p-title-2{
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: right;
+    position: absolute;
+    left: 20px;
+    top: 11px;
+}
+
+.mail-r{
+    margin-left: 325px;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #20a0ff;
+}
+
+.account-tip{
+    font-size: 13px;
+    color: #fff;
+    background-color: #a1a1a1;
+    padding: 8px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.account-bottom-tip{
+    font-size: 12px;
+    margin-top: 40px;
+    padding-left: 30px;
+    color: #666;
+    line-height: 16px !important;
+}
+
+.account-bottom-tip-pc{
+    font-size: 13px;
+    margin-top: 40px;
+    padding-left: 0px;
+    color: #666;
+    line-height: 20px !important;
+}
+
+.form-tip{
+    position: absolute;
+    width: 210px;
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px 5px;
+    background-color: #fff;
+    z-index: 99;
+    font-size: 12px;
+    line-height: 18px;
+    top: -50px;
+    left: 100px;
+    text-align: left;
+}
+
+.form-tip.mt{
+    top: -60px;
+}
+
+.checkpost-mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 998;
+    top: 0;
+    left: 0;
+    display:none;
+}
+
+.checkpost-win{position: fixed;width: 300px;border-radius: 6px;top: 120px;left: 50%;margin-left: -150px;z-index: 999;background-color: #fff;padding-bottom: 10px;display:none;}
+.checkpost-win-title{font-size: 15px;color: #2A1D0C;letter-spacing: 0;text-align: center;font-weight: bold;margin-top: 20px;margin-bottom: 15px;}
+.checkpost-win-tip{font-size: 13px;color: #7F7F7F;letter-spacing: 0;text-align: center;padding: 0 20px;padding-bottom: 7px;}
+.checkpost-win-btn{width: 90%;height: 50px;line-height: 50px;color: #fff;font-size: 14px;text-align: center;display: block;background-color: #FD113A;border-radius: 25px;margin: 10px auto;}
